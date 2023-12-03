@@ -9,6 +9,10 @@ body {
   height: 100%;
   width: 50%;
 }
+.entry .project-content img {
+  height: 25%;
+  width: 25%;
+}
 .entry {
   padding: 40px 20px 0px 20px;
   color: azure;
@@ -67,6 +71,7 @@ strong {
   font-family: "Calibri";
   color: azure;
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 #container .entry .project-title {
   display: flex;
@@ -84,22 +89,22 @@ strong {
   font-family: "Calibri";
 }
 
-.entry .game-informations .row-data{
+.entry .game-informations .row-data {
   padding: 10px;
 }
 
-#container .entry .play-button{
+#container .entry .play-button {
   background-color: grey;
-  margin:  10px 0px;
+  margin: 10px 0px;
   padding: 5px 0px;
 }
 
-#container .entry .play-button a{
+#container .entry .play-button a {
   text-decoration: none;
-  font-family:'Calibri';
+  font-family: "Calibri";
   padding: 10px;
 }
-#container .entry .play-button a:visited{
+#container .entry .play-button a:visited {
   color: aliceblue;
 }
 .project-image img {
@@ -107,29 +112,54 @@ strong {
   margin: 25px 0px;
   overflow: hidden;
 }
-.entry .project-content img {
-  height: 25%;
-  width: 25%;
+
+.nebulapower-introduction {
+  display: flex;
+  margin-top: 100px;
 }
 .entry .project-content .project-explanation p {
   margin-right: 0px;
   font-size: 20px;
   width: 90%;
 }
-
-.nebulapower-introduction {
-  display: flex;
-  margin-top: 100px;
-}
 .nebulapower-part1 {
   display: flex;
   margin-top: 100px;
 }
-.Copyright{
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(8, 8, 8);
-    font-family: "Calibri";
-    margin-top: 15px;
+.nebulapower-part2 {
+  display: flex;
+  margin-top: 100px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+}
+.gallery img {
+  width: 100%;
+}
+
+.Copyright {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(8, 8, 8);
+  font-family: "Calibri";
+  margin-top: 15px;
+}
+@media screen and (max-width: 600px) {
+  #container {
+    background-color: rgb(17, 17, 17);
+    height: 100%;
+    width: 100%;
+  }
+  .entry .project-content img {
+    height: 40%;
+    width: 40%;
+  }
+  .entry .project-content .project-explanation p {
+    margin-right: 0px;
+    font-size: 15px;
+    width: 90%;
+  }
 }
