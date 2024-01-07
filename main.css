@@ -203,13 +203,18 @@ strong {
   color: azure;
 }
 /*<----CROSS PLATFORMS--->*/
-/* @media screen and (max-width: 600px) {
+ @media screen and (max-width: 951.5px) {
   #container {
-    max-width: 600px;
+    max-width: 100%;
     background-color: rgb(17, 17, 17);
   }
   .entry .project-content img {
     height: 40%;
     width: 40%;
   }
-} */
+  .owner {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 40px;
+  }
+} 
