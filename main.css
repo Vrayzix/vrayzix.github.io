@@ -1,22 +1,20 @@
+* {
+  box-sizing: border-box;
+}
 body {
-  display: flex;
-  justify-content: center;
   background-color: rgb(22, 22, 22);
   margin: 0px;
 }
+
 #container {
   background-color: rgb(17, 17, 17);
-  height: 100%;
-  width: 50%;
+  width: 951.5px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
 }
-.entry .project-content img {
-  height: 25%;
-  width: 25%;
-}
-.entry {
-  padding: 40px 20px 0px 20px;
-  color: azure;
-}
+/*<----HEADER---->*/
 .owner {
   display: flex;
   justify-content: space-between;
@@ -26,22 +24,15 @@ body {
   height: 60px;
   padding: 20px 20px 70px;
 }
-.owner .icons img{
-height: 25px;
-width: 35px;
-}
-.portfolio-introduction {
-  margin: 100px 0px 60px;
-}
-#container .entry .title {
-  display: flex;
-  justify-content: center;
-}
+/*<----NAVIGATION SECTION---->*/
 #container .navbar a {
   padding: 10px 20px;
   font-family: "Calibri";
   color: azure;
   text-decoration: none;
+}
+#container .navbar ul li ul a {
+  background-color: rgb(63, 63, 63);
 }
 #container .navbar a:hover {
   background-color: gray;
@@ -50,7 +41,6 @@ width: 35px;
   float: left;
   padding: 0px;
 }
-
 .navbar ul li {
   float: left;
   list-style: none;
@@ -59,7 +49,6 @@ width: 35px;
 .navbar ul li a {
   display: block;
 }
-
 .navbar ul li ul {
   display: none;
   position: absolute;
@@ -67,18 +56,39 @@ width: 35px;
 .navbar ul li:hover ul {
   display: block;
 }
-
-p {
-  font-family: "Calibri";
+/*<----ARTICLE---->*/
+.entry {
+  padding: 40px 20px 0px 20px;
   color: azure;
 }
 
-strong {
+.portfolio-introduction {
+  margin: 100px 0px 60px;
+}
+
+#container .entry .Projects-Section {
+  display: flex;
+  justify-content: center;
   font-family: "Calibri";
   color: azure;
+  font-size: 30px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+.portfolio-projects img {
+  width: 100%;
+  margin: 25px 0px 5px;
+  overflow: hidden;
+}
+.portfolio-projects .project-name {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+}
+/*PROJECT PAGE*/
 #container .entry .project-title {
   display: flex;
   justify-content: center;
@@ -87,54 +97,84 @@ strong {
   width: 100%;
 }
 
-#container .entry .game-informations {
+#container .entry .project-informations {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-family: "Calibri";
 }
-
-.entry .game-informations .row-data {
+.entry .project-informations table {
+  margin: 10px;
+}
+.entry .project-informations .row-data {
   padding: 10px;
 }
-
-#container .entry .play-button {
-  background-color: grey;
-  margin: 10px 0px;
-  padding: 5px 0px;
-}
-
-#container .entry .play-button a {
+#container .entry .project-button {
+  margin: 10px;
+  padding: 10px;
   text-decoration: none;
+  background-color: grey;
   font-family: "Calibri";
-  padding: 10px;
 }
-#container .entry .play-button a:visited {
+#container .entry .project-button:visited {
   color: aliceblue;
 }
-.project-image img {
-  width: 100%;
-  margin: 25px 0px;
-  overflow: hidden;
-}
 
-.nebulapower-introduction {
-  display: flex;
-  margin-top: 100px;
+.entry .mobile-project-content{
+  margin: 80px 0px;
 }
-.entry .project-content .project-explanation p {
+.entry .mobile-project-content p {
   margin-right: 0px;
   font-size: 20px;
   width: 90%;
 }
-.nebulapower-part1 {
+.entry .mobile-project-content img {
+  height: 25%;
+  width: 25%;
+}
+
+.mobile-project-introduction {
   display: flex;
   margin-top: 100px;
 }
-.nebulapower-part2 {
+.mobile-project-part1 {
   display: flex;
   margin-top: 100px;
+}
+.mobile-project-part2 {
+  display: flex;
+  margin-top: 100px;
+}
+
+.entry .desktop-project-content{
+  margin: 80px 0px;
+}
+.entry .desktop-project-content p {
+  margin-right: 0px;
+  font-size: 20px;
+  width: 90%;
+}
+.entry .desktop-project-content img {
+  height: 65%;
+  width: 65%;
+  margin: 30px 0px;
+}
+
+.desktop-project-introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.designs-introduction{
+  margin: 100px 0px 60px;
+}
+.design-projects strong{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
 }
 .gallery {
   display: grid;
@@ -144,7 +184,7 @@ strong {
 .gallery img {
   width: 100%;
 }
-
+/*<----FOOTER---->*/
 .Copyright {
   color: aliceblue;
   display: flex;
@@ -153,19 +193,23 @@ strong {
   font-family: "Calibri";
   margin-top: 15px;
 }
-@media screen and (max-width: 600px) {
+/*<-------->*/
+p {
+  font-family: "Calibri";
+  color: azure;
+}
+strong {
+  font-family: "Calibri";
+  color: azure;
+}
+/*<----CROSS PLATFORMS--->*/
+/* @media screen and (max-width: 600px) {
   #container {
+    max-width: 600px;
     background-color: rgb(17, 17, 17);
-    height: 100%;
-    width: 100%;
   }
   .entry .project-content img {
     height: 40%;
     width: 40%;
   }
-  .entry .project-content .project-explanation p {
-    margin-right: 0px;
-    font-size: 15px;
-    width: 90%;
-  }
-}
+} */
