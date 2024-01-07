@@ -204,17 +204,50 @@ strong {
 }
 /*<----CROSS PLATFORMS--->*/
  @media screen and (max-width: 951.5px) {
-  #container {
-    max-width: 100%;
-    background-color: rgb(17, 17, 17);
-  }
-  .entry .project-content img {
-    height: 40%;
-    width: 40%;
-  }
   .owner {
     text-align: center;
     font-size: 35px;
     padding-bottom: 40px;
+  }
+  #container {
+    max-width: 100%;
+    background-color: rgb(17, 17, 17);
+  }
+  .mobile-project-introduction {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .mobile-project-part1{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .mobile-project-part2{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .entry .mobile-project-content p {
+    width: 100%;
+    margin-right: 0px;
+    font-size: 19px;
+    text-align: center;
+  }
+  .entry .mobile-project-content strong {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px;
+  }
+  .entry .mobile-project-content img {
+    height: 60%;
+    width: 60%;
+  }
+  .entry .desktop-project-content P{
+    width: 100%;
+    margin-right: 0px;
+    font-size: 19px;
+    text-align: center;
+  }
+  .entry .desktop-project-content img {
+    height: 100%;
+    width: 100%;
   }
 } 
