@@ -34,8 +34,8 @@ body {
 .navbar .availability .dot{
   display: inline-block;
   background-color: azure;
-  height: 10px;
-  width: 10px;
+  height: 12px;
+  width: 12px;
   border-radius: 50px;
   animation: 2s animationToggle infinite;
 }
@@ -52,6 +52,7 @@ body {
   margin: 10px;
 }
 .navbar a {
+  font-size: 16px;
   padding: 10px 20px;
   font-family: "Calibri";
   color: azure;
@@ -91,6 +92,9 @@ body {
 
 .portfolio-introduction {
   margin: 100px 0px 60px;
+}
+.portfolio-introduction strong{
+  font-size: 20px;
 }
 
 #container .entry .Projects-Section {
@@ -135,9 +139,11 @@ body {
   margin: 10px;
 }
 .entry .project-informations .row-data {
+  font-size: 17px;
   padding: 10px;
 }
 #container .entry .project-button {
+  font-size: 18px;
   margin: 10px;
   padding: 10px;
   text-decoration: none;
@@ -146,6 +152,9 @@ body {
 }
 #container .entry .project-button:visited {
   color: aliceblue;
+}
+.text-block strong{
+  font-size: 30px;
 }
 
 .entry .mobile-project-content{
@@ -198,10 +207,14 @@ body {
 .designs-introduction{
   margin: 100px 0px 60px;
 }
+.designs-introduction strong{
+  font-size: 20px;
+}
 .design-projects strong{
   display: flex;
   justify-content: center;
   margin: 30px 0px;
+  font-size: 30px;
 }
 .gallery {
   display: grid;
@@ -222,6 +235,7 @@ body {
 }
 /*<-------->*/
 p {
+  font-size: 19px;
   font-family: "Calibri";
   color: azure;
 }
@@ -235,7 +249,7 @@ strong {
     max-width: 100%;
     background-color: rgb(17, 17, 17);
   }
-  
+
   .owner {
     text-align: center;
     font-size: 35px;
