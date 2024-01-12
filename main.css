@@ -97,7 +97,7 @@ body {
   font-size: 20px;
 }
 
-#container .entry .Projects-Section {
+#container .entry .projects-type {
   display: flex;
   justify-content: center;
   font-family: "Calibri";
@@ -106,7 +106,12 @@ body {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-
+.portfolio-projects{
+  margin-top: 25px;
+}
+.portfolio-projects .projects-section{
+  margin: 40px 0px;
+}
 .portfolio-projects img {
   width: 100%;
   margin: 25px 0px 5px;
