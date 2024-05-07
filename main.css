@@ -189,6 +189,10 @@ body {
   display: flex;
   margin-top: 100px;
 }
+.mobile-project-conclusion {
+  display: flex;
+  margin-top: 100px;
+}
 
 .entry .desktop-project-content{
   margin: 80px 0px;
@@ -199,12 +203,30 @@ body {
   width: 90%;
 }
 .entry .desktop-project-content img {
-  height: 65%;
-  width: 65%;
+  height: 90%;
+  width: 90%;
   margin: 30px 0px;
 }
 
 .desktop-project-introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+.desktop-project-part1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+.desktop-project-part2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+.desktop-project-conclusion {
   display: flex;
   flex-direction: column;
   align-items: center;
